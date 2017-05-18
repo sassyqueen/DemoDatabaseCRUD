@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     ListView lv;
     ArrayAdapter<String> aa;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -65,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
                     String tmp = al.get(i);
                     txt += tmp + "\n";
                 }
-//                tvDBContent.setText(txt);
+                tvDBContent.setText(txt);
                 aa.notifyDataSetChanged();
             }
 
